@@ -2,6 +2,7 @@
 
 .content ul li:hover {
     color: rgb(113, 89, 193);
+    transition: 300ms;
 }
 
 
@@ -55,7 +56,7 @@
         transform: translateX(0);
     }
 }
-@keyframes cheff
+@keyframes swing
 {
     15%
     {

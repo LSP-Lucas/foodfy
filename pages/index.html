@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/animation.css">
+    <link rel="stylesheet" href="../css/modal.css">
 </head>
 <body>
     <div id="content">
@@ -45,37 +46,37 @@
                 <h1>Mais acessadas</h1>
             </div>
             <div class="recipes">
-                <div class="recipe">
+                <div class="recipe" id="burger">
                     <img src="../assets/burger.png" alt="Triplo bacon burger">
                     <h2>Triplo bacon burger</h2>
                     <p>por Jorge Relato</p>
                 </div>
 
-                <div class="recipe">
+                <div class="recipe" id="pizza">
                     <img src="../assets/pizza.png" alt="Triplo bacon burger">
                     <h2>Pizza 4 estações</h2>
                     <p>por Fabiana Melo</p>
                 </div>
 
-                <div class="recipe">
+                <div class="recipe" id="espaguete">
                     <img src="../assets/espaguete.png" alt="Triplo bacon burger">
                     <h2>Espaguete ao alho</h2>
                     <p>por Júlia Kinoto</p>
                 </div>
 
-                <div class="recipe">
+                <div class="recipe" id="lasanha">
                     <img src="../assets/lasanha.png" alt="Triplo bacon burger">
                     <h2>Lasanha mac n’ cheese</h2>
                     <p>por Juliano Vieira</p>
                 </div>
 
-                <div class="recipe">
+                <div class="recipe" id="doce">
                     <img src="../assets/doce.png" alt="Triplo bacon burger">
                     <h2>Docinhos pão-do-céu</h2>
                     <p>por Ricardo Golvea</p>
                 </div>
                 
-                <div class="recipe">
+                <div class="recipe" id="asinhas">
                     <img src="../assets/asinhas.png" alt="Triplo bacon burger">
                     <h2>Asinhas de frango ao barbecue</h2>
                     <p>por Vania Steroski</p>
@@ -87,5 +88,19 @@
     <footer>
         <p>Todos direitos reservados, receitas Foodfy.</p>
     </footer>
+
+    <div class="modal-overlay">
+        <div class="modal">
+            <img src="" alt="Receitas">
+            <h2></h2>
+            <p>por Vania Steroski</p>
+            
+            <div class="close-modal">
+                <a class="close">Fechar modal</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="../scripts/scripts.js"></script>
 </body>
 </html>

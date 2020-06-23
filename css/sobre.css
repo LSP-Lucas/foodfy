@@ -53,6 +53,7 @@ header .menu {
 
 .menu ul li:hover {
     color: rgb(113, 89, 193);
+    transition: 300ms;
 }
 
 section {
