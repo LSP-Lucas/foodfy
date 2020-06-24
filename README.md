@@ -8,11 +8,17 @@
 
 A primeira parte do desafio consistia em construir o front-end completo do site para uma empresa chamada Foodfy.
 
+<img src="https://ik.imagekit.io/mqh5rdpeme/page1_6jE3gObKW.gif" alt="Desafios LaunchBase - Bootcamp" />
 
+<img src="https://ik.imagekit.io/mqh5rdpeme/page2_0DTYSe-Hg.gif" alt="Desafios LaunchBase - Bootcamp" />
+
+<img src="https://ik.imagekit.io/mqh5rdpeme/page3_wcuQBeP1W.gif" alt="Desafios LaunchBase - Bootcamp" />
 
 <br />
 
-## 🚀 Tecnologias utilizadas
+
+
+## 📌 Tecnologias utilizadas
 
 
 | Font-end  | 
