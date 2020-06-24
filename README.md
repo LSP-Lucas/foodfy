@@ -8,9 +8,7 @@
 
 A primeira parte do desafio consistia em construir o front-end completo do site para uma empresa chamada Foodfy.
 
-<p>
-<img src="https://ik.imagekit.io/mqh5rdpeme/foodfy_RBxDGqq8F.gif">
-<p>
+
 
 <br />
 
