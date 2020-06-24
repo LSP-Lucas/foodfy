@@ -3,6 +3,7 @@
 </h1>
 <h4 align="center"> Desafio: Construindo Foodfy </h4>
 <br/>
+
 ## 🚀 Sobre o desafio
 
 A primeira parte do desafio consistia em construir o front-end completo do site para uma empresa chamada Foodfy.
@@ -11,7 +12,9 @@ A primeira parte do desafio consistia em construir o front-end completo do site 
 <img src="https://ik.imagekit.io/mqh5rdpeme/foodfy_RBxDGqq8F.gif">
 </h4>
 <br />
+
 ## 🚀 Tecnologias utilizadas
+
 
 | Font-end  | 
 | :------------: | 
