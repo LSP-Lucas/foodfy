@@ -1,0 +1,27 @@
+{
+  "name": "foodfy",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">\r <img src=\"https://ik.imagekit.io/mqh5rdpeme/img-launchbase_u1x6ViV8P.png\">\r </h1>\r <h4 align=\"center\"> Desafio: Construindo Foodfy </h4>\r <br/>",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LSP-Lucas/foodfy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LSP-Lucas/foodfy/issues"
+  },
+  "homepage": "https://github.com/LSP-Lucas/foodfy#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

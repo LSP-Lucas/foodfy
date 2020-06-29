@@ -16,8 +16,7 @@ body {
 }
 
 header {
-    padding-top: 30px;
-    margin-bottom: 56px;
+    padding: 30px 0 20px;
 }
 
 header .content {
@@ -51,13 +50,68 @@ header .content {
     font-weight: 400;
 }
 
+.banner {
+    background-color: #FBDFDB;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 366px;
+    border-radius: 30px;
+    
+}
+
+.banner .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 60px;
+
+}
+
+.description h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: #111111;
+}
+
+.description p {
+    opacity: 0.7;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000000;
+    line-height: 28px;
+}
+
+.banner .cheff {
+    position: relative;
+}
+
+.cheff img {
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+main {
+    margin: 50px 0;
+}
+
+main h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #111111;
+}
+
 main .recipes {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px 20px;
+    margin-top: 20px;
 }
 
-.recipes img {
+main .recipes img {
     width: 300px;
     height: 140px;
     border-radius: 15px;
@@ -79,21 +133,7 @@ main .recipes {
     margin-top: 5px;
 }
 
-footer {
-    height: 62px;
-    background: #EEEEEE;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-top: 50px;
+.content ul li:hover {
+    color: rgb(113, 89, 193);
 }
 
-footer p {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    color: #999999;
-    text-align: center;
-}

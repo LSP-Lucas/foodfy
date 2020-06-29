@@ -20,30 +20,30 @@ header {
     margin-bottom: 50px;
 }
 
-header .menu {
+header .content {
     display: flex;
     flex-direction: row;
     margin: 0 auto;
     
 }
 
-.menu img {
+.content img {
     width: 90.6px;
     height: 26.9px;
 }
 
-.menu ul {
+.content ul {
     display: flex;
     flex-direction: row;
     margin: 0 100px;
     list-style: none;
 }
 
-.menu ul a {
+.content ul a {
     text-decoration: none;
 }
 
-.menu ul li {
+.content ul li {
     margin: 0 15px;
     font-size: 16px;
     color: #111111;
@@ -51,7 +51,7 @@ header .menu {
     font-weight: 400;
 }
 
-.menu ul li:hover {
+.content ul li:hover {
     color: rgb(113, 89, 193);
     transition: 300ms;
 }
@@ -83,23 +83,4 @@ section p {
     color: #444444;
     line-height: 28px;
     
-}
-
-footer {
-    height: 62px;
-    background: #EEEEEE;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-top: 50px;
-}
-
-footer p {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    color: #999999;
-    text-align: center;
 }
