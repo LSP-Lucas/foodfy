@@ -4,7 +4,6 @@
 
     <link rel="stylesheet" href="../css/receitas.css">
     <link rel="stylesheet" href="../css/animation.css">
-    <link rel="stylesheet" href="../css/modal.css">
 
 {% endblock head %}
 
@@ -15,17 +14,7 @@
 
             {% for recipe in recipes %}
 
-                <div class="recipe" id="">
-                    <img src="{{ recipe.image }}">
-                    <h2>{{ recipe.title }}</h2>
-                    <p>{{ recipe.author }}</p>
-                </div>
-
-            {% endfor %}
-
-            {% for recipe in recipes %}
-
-                <div class="recipe" id="">
+                <div class="recipe">
                     <img src="{{ recipe.image }}">
                     <h2>{{ recipe.title }}</h2>
                     <p>{{ recipe.author }}</p>
@@ -37,6 +26,14 @@
     </main>
 
 {% endblock content %}
+
+{% block footer %} 
+
+    <footer>
+        <p>Todos direitos reservados, receitas Foodfy.</p>
+    </footer>
+
+{% endblock footer %}
 
 {% block scripts %}
 

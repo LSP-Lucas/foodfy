@@ -29,6 +29,17 @@ server.get("/receitas", function(req, res) {
     return res.render("receitas", { recipes });
 });
 
+server.get("/receitas/:index", function (req, res) {
+    const receipts = [...recipes];
+
+    const recipeIndex = req.params.index;
+
+    return res.render("descricao-receita", { items: receipts[recipeIndex - 1] });
+  
+});
+
 server.listen(5000, function() {
     console.log("O servidor ouviu");
 });
+
+

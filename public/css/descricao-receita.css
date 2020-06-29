@@ -16,8 +16,7 @@ body {
 }
 
 header {
-    padding-top: 30px;
-    margin-bottom: 56px;
+    padding: 30px 0 56px;
 }
 
 header .content {
@@ -51,32 +50,12 @@ header .content {
     font-weight: 400;
 }
 
-main .recipes {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px 20px;
+.banner {
+
 }
 
-.recipes img {
-    width: 300px;
-    height: 140px;
+.banner img {
     border-radius: 15px;
-}
-
-.recipe h2 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    color: #111111;
-    margin-top: 20px;
-}
-
-.recipe p {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    color: #777777;
-    margin-top: 5px;
 }
 
 footer {
@@ -88,8 +67,7 @@ footer {
     align-items: center;
     width: 100%;
     margin-top: 50px;
-    position: fixed;
-    bottom: 0;
+
 }
 
 footer p {

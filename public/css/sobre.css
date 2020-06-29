@@ -84,3 +84,23 @@ section p {
     line-height: 28px;
     
 }
+
+footer {
+    height: 62px;
+    background: #EEEEEE;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+
+}
+
+footer p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #999999;
+    text-align: center;
+}
