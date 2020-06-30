@@ -20,22 +20,22 @@
         <div class="ingredients">
             <div class="option-ingredients">
                 <h2>Ingredientes</h2>
-                <p>ESCONDER</p>
+                <p id="btn-ingredients">ESCONDER</p>
             </div>
 
-            <div class="list-ingredients">
-                {% for item in items.ingredients %}
-                    <ul>
+            <div class="list-ingredients">                
+                <ul>
+                    {% for item in items.ingredients %}
                         <li>{{ item }}</li>
-                    </ul>
-                {% endfor %}
+                    {% endfor %}
+                </ul>
             </div>
         </div>
 
         <div class="preparation">
-            <div class="option-preparation">
+            <div class="option-preparation active">
                 <h2>Mode de preparo</h2>
-                <p>ESCONDER</p>
+                <p id="btn-preparation">ESCONDER</p>
             </div>
 
             <div class="list-preparation">
@@ -48,9 +48,9 @@
         </div>
 
         <div class="information">
-            <div class="option-information">
+            <div class="option-information active">
                 <h2>Informações adicionais</h2>
-                <p>ESCONDER</p>
+                <p id="btn-information">ESCONDER</p>
             </div>
 
             <p class="description">{{ items.information }}</p>

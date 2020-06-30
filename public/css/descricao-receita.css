@@ -177,6 +177,33 @@ header .content {
     line-height: 28px;
 }
 
+.content ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0 100px;
+    list-style-type: none;
+}
+
+.content ul li {
+    margin: 0 15px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.content ul li a {
+    text-decoration: none;
+    color: #111111;
+}
+
+.content ul li a:hover {
+    color: rgb(113, 89, 193);
+}
+
+.content li:nth-child(2) {
+    font-weight: bold !important;
+}
+
 footer {
     height: 62px;
     background: #EEEEEE;
@@ -186,7 +213,6 @@ footer {
     align-items: center;
     width: 100%;
     margin-top: 50px;
-
 }
 
 footer p {
@@ -195,4 +221,24 @@ footer p {
     font-size: 14px;
     color: #999999;
     text-align: center;
+}
+
+/* === Efeitos de Esconder e Aparecer === */
+
+.list-ingredients.active {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+}
+
+.list-preparation.active {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+}
+
+.description.active {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
 }

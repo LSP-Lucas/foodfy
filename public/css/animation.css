@@ -1,11 +1,3 @@
-/*Efeito Hover Menu*/
-
-.content ul li:hover {
-    color: rgb(113, 89, 193);
-    transition: 300ms;
-}
-
-
 /* === Efeitos MENUS === */
 
 .recipe {
