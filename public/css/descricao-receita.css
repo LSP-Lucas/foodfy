@@ -50,12 +50,131 @@ header .content {
     font-weight: 400;
 }
 
-.banner {
-
-}
-
 .banner img {
     border-radius: 15px;
+    width: 940px;
+    height: 280px;
+}
+
+.banner h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    color: #111111;
+    text-align: center;
+    margin: 50px 0 4px;
+}
+
+.banner p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #777777;
+    text-align: center;
+}
+
+.ingredients {
+    width: 940px;
+}
+
+.option-ingredients {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin: 50px 0 20px;
+}
+
+.option-ingredients h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #111111;
+    padding-right: 8px;
+}
+
+.option-ingredients p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    color: #999999;
+}
+
+.list-ingredients ul {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    list-style-position: inside;
+    color: #444444;
+}
+
+.preparation {
+    width: 940px;
+}
+
+.option-preparation {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin: 39px 0 20px;
+}
+
+.option-preparation h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #111111;
+    padding-right: 8px;
+}
+
+.option-preparation p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    color: #999999;
+}
+
+.list-preparation ul {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    list-style-position: inside;
+    color: #444444;
+}
+
+.information {    
+    width: 940px;
+}
+
+.option-information {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin: 47px 0 20px;
+}
+
+.option-information h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #111111;
+    padding-right: 8px;
+}
+
+.option-information p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    color: #999999;
+}
+
+.information .description {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;
 }
 
 footer {

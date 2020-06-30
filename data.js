@@ -64,7 +64,7 @@ module.exports = [
         'Em uma frigideira ou assador coloque o óleo quando estiver quente frite até ficarem douradas.',
         'Para servir fica bonito com salada, ou abuse da criatividade.'
       ],
-      information: ''
+      information: 'Asinhas de frando são muito boas e agradáveis'
     },
     {
       image: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/lasanha.png',
@@ -130,6 +130,6 @@ module.exports = [
         'Despeje em assadeira retangular média, untada e leve ao forno médio (180°C), por aproximadamente 45 minutos. Depois de frio, polvilhe, com o',
         'açúcar de confeiteiro e corte em quadrados.'
       ],
-      information: ''
+      information: 'Por conter ovos nesta receita ela se torna saudável.'
     }
   ];

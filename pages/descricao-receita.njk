@@ -10,12 +10,52 @@
 {% block content %}
 
     <section class="banner">
-
-        <img src="{{ items.image }}" alt="{{ items.title }}">
-        
+        <img src="{{ items.image }}" alt="{{ items.title }}"/>
+        <h1>{{ items.title }}</h1>
+        <p>{{ items.author }}</p>
     </section>
 
     <main>
+        
+        <div class="ingredients">
+            <div class="option-ingredients">
+                <h2>Ingredientes</h2>
+                <p>ESCONDER</p>
+            </div>
+
+            <div class="list-ingredients">
+                {% for item in items.ingredients %}
+                    <ul>
+                        <li>{{ item }}</li>
+                    </ul>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="preparation">
+            <div class="option-preparation">
+                <h2>Mode de preparo</h2>
+                <p>ESCONDER</p>
+            </div>
+
+            <div class="list-preparation">
+                {% for item in items.preparation %}
+                    <ul>
+                        <li>{{ item }}</li>
+                    </ul>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="information">
+            <div class="option-information">
+                <h2>Informações adicionais</h2>
+                <p>ESCONDER</p>
+            </div>
+
+            <p class="description">{{ items.information }}</p>
+        
+        </div>
         
     </main>
 
