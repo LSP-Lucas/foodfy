@@ -16,14 +16,14 @@
     </section>
 
     <main>
-        
+
         <div class="ingredients">
             <div class="option-ingredients">
                 <h2>Ingredientes</h2>
                 <p id="btn-ingredients">ESCONDER</p>
             </div>
 
-            <div class="list-ingredients">                
+            <div class="list-ingredients">
                 <ul>
                     {% for item in items.ingredients %}
                         <li>{{ item }}</li>
@@ -54,14 +54,14 @@
             </div>
 
             <p class="description">{{ items.information }}</p>
-        
+
         </div>
-        
+
     </main>
 
 {% endblock content %}
 
-{% block footer %} 
+{% block footer %}
 
     <footer>
         <p>Todos direitos reservados, receitas Foodfy.</p>
@@ -69,8 +69,8 @@
 
 {% endblock footer %}
 
-{% block scripts %} 
+{% block scripts %}
 
     <script src="../scripts/scripts.js"></script>
-    
+
 {% endblock scripts %}

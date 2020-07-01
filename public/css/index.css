@@ -10,9 +10,19 @@ body {
     background-color: #fff;
 }
 
+html, body {
+    height: 100%;
+}
+
+#wrapper{
+    min-height: 100%;
+    position: relative;
+}
+
 #content {
     max-width: 940px;
     margin: 0 auto;
+    padding-bottom: 110px;
 }
 
 header {
@@ -23,7 +33,6 @@ header .content {
     display: flex;
     flex-direction: row;
     margin: 0 auto;
-    
 }
 
 .content img {
@@ -60,7 +69,6 @@ header .content {
     grid-template-columns: 1fr 1fr;
     height: 366px;
     border-radius: 30px;
-    
 }
 
 .banner .description {
@@ -68,7 +76,6 @@ header .content {
     flex-direction: column;
     justify-content: center;
     padding-left: 60px;
-
 }
 
 .description h1 {
@@ -150,7 +157,9 @@ footer {
     align-items: center;
     width: 100%;
     margin-top: 50px;
-
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 footer p {
@@ -160,4 +169,3 @@ footer p {
     color: #999999;
     text-align: center;
 }
-

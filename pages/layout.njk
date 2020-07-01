@@ -6,12 +6,12 @@
         <title>Foodfy</title>
 
         <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="../css/layout.css">
 
         {% block head %}{% endblock head %}
 
     </head>
     <body>
+        <div id="wrapper">
         <div id="content">
             <header>
                 <nav>
@@ -40,8 +40,8 @@
         </div>
 
         {% block footer %}{% endblock footer %}
-
+        
         {% block scripts %}{% endblock scripts %}
-
+        </div>
     </body>
 </html>
