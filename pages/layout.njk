@@ -12,36 +12,35 @@
     </head>
     <body>
         <div id="wrapper">
-        <div id="content">
-            <header>
-                <nav>
-                    <div class="content">
-                        <div>
-                            <a href="/">
-                                <img src="../assets/logo.png" alt="Foodfy">
-                            </a>
+            <div id="content">
+                <header>
+                    <nav>
+                        <div class="content">
+                            <div>
+                                <a href="/">
+                                    <img src="../assets/logo.png" alt="Foodfy">
+                                </a>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <a href="/sobre">Sobre</a>
+                                    </li>
+                                    <li>
+                                        <a href="/receitas">Receitas</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div>
-                            <ul>
-                                <li>
-                                    <a href="/sobre">Sobre</a>
-                                </li>
-                                <li>
-                                    <a href="/receitas">Receitas</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </header>
+                    </nav>
+                </header>
 
-            {% block content %}{% endblock content %}
+                {% block content %}{% endblock content %}
+            </div>
 
-        </div>
+            {% block footer %}{% endblock footer %}
 
-        {% block footer %}{% endblock footer %}
-        
-        {% block scripts %}{% endblock scripts %}
+            {% block scripts %}{% endblock scripts %}
         </div>
     </body>
 </html>
