@@ -25,11 +25,12 @@ A primeira parte do desafio consistia em construir o front-end completo do site 
 ## 📌 Tecnologias utilizadas
 
 
-| Font-end  | 
-| :------------: | 
-|  HTML5 |  
-|  CSS |   
-| Javascript |   
+| Font-end  | Back-end |
+| :------------: | :------------: |
+|  HTML5 |  Node.js |
+|  CSS |  Express |
+| Javascript | Nunjucks |  
+| Nunjucks | Nodemon |
 
 ------------
 
