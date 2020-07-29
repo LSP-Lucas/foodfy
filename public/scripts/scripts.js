@@ -3,10 +3,11 @@ const list__ingredients = document.querySelector('.list-ingredients');
 const list__preparation = document.querySelector('.list-preparation');
 const description = document.querySelector('.description');
 
-
 for (let i = 0; i < recipes.length; i++) {
 
     recipes[i].addEventListener('click', function () {
+
+        console.log(i);
 
         window.location.href = `/receitas/${i + 1}`;
 
