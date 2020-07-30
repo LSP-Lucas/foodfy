@@ -57,16 +57,3 @@ document.querySelector('#btn-information').addEventListener("click", function ()
 });
 
 
-
-// document.querySelector('.close').addEventListener('click', function() {
-
-//     const fadeOut = modalOverlay.classList.contains('fadeOut');
-
-//     if(!fadeOut){
-//         modalOverlay.classList.add('fadeOut');
-//     }
-
-//     modalOverlay.classList.remove('active');
-
-// });
-

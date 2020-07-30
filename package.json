@@ -1,10 +1,12 @@
 {
   "name": "foodfy",
   "version": "1.0.0",
-  "description": "<h1 align=\"center\">\r <img src=\"https://ik.imagekit.io/mqh5rdpeme/img-launchbase_u1x6ViV8P.png\">\r </h1>\r <h4 align=\"center\"> Desafio: Construindo Foodfy </h4>\r <br/>",
+  "description": "Sistema de Restaurante",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "npm-run-all -p nodemon browsersync",
+    "nodemon": "nodemon server.js",
+    "browsersync": "browser-sync start --proxy http://localhost:5000 --files 'public,pages'"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,8 @@
     "nunjucks": "^3.2.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "browser-sync": "^2.26.12",
+    "nodemon": "^2.0.4",
+    "npm-run-all": "^4.1.5"
   }
 }
