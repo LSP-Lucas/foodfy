@@ -9,13 +9,10 @@ routes.get("/receitas", users.receitas);
 routes.get("/receitas/:index", users.filter);
 
 
-
-
 routes.get("/admin", function(req, res) {
 
     return res.redirect("/admin/recipes");
 });
-
 routes.get("/admin/recipes", recipes.index);
 
 

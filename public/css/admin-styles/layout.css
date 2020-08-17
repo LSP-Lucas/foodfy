@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    padding: 40px 0 40px;
+    margin-bottom: 50px;
+    background: #111111;
+}
+
+.content-header {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+#content {
+    max-width: 940px;
+    margin: 0 auto;
+}

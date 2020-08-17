@@ -1,0 +1,60 @@
+main h1 {
+    margin-bottom: 30px;
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 24px;
+    color: #111111;
+}
+
+.recipes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+}
+
+.recipe {
+    display: grid;
+    grid-template-columns: 1fr 2fr ;
+    column-gap: 20px;
+    margin-bottom: 20px;
+}
+
+.recipe img {
+    width: 172px;
+    height: 80px;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.recipe:hover img {
+    transform: scale(1.1);
+}
+
+.recipe h2 {
+    margin-bottom: 5px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 18px;
+    color: #111111;
+}
+
+.recipe p {
+    margin-bottom: 10px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    color: #777777;
+}
+
+.recipe a {
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 14px;
+    color: #6558C3;
+    text-decoration: none;
+    transition: color 2s;
+}
+
+.recipe a:hover {
+    color: #4c3bce;
+}
