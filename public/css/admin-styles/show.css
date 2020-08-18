@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+#wrapper{
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    background-color: #fff;
+}
+
+#content {
+    max-width: 940px;
+    margin: 0 auto;
+    padding-bottom: 110px;
+}
+
+header {
+    padding: 30px 0 56px;
+}
+
+header .content {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.content img {
+    width: 90.6px;
+    height: 26.9px;
+}
+
+.content ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0 100px;
+    list-style: none;
+}
+
+.content ul a {
+    text-decoration: none;
+}
+
+.content ul li {
+    margin: 0 15px;
+    font-size: 16px;
+    color: #111111;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.banner img {
+    border-radius: 15px;
+    width: 940px;
+    height: 280px;
+}
+
+.banner h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    color: #111111;
+    text-align: center;
+    margin: 50px 0 4px;
+}
+
+.banner p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #777777;
+    text-align: center;
+}
+
+.ingredients {
+    width: 940px;
+}
+
+.option-ingredients {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin: 50px 0 20px;
+}
+
+.option-ingredients h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #111111;
+    padding-right: 8px;
+}
+
+.option-ingredients p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    color: #999999;
+}
+
+.list-ingredients ul {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    list-style-position: inside;
+    color: #444444;
+}
+
+.preparation {
+    width: 940px;
+}
+
+.option-preparation {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin: 39px 0 20px;
+}
+
+.option-preparation h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #111111;
+    padding-right: 8px;
+}
+
+.option-preparation p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    color: #999999;
+}
+
+.list-preparation ul {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    list-style-position: inside;
+    color: #444444;
+}
+
+.information {    
+    width: 940px;
+}
+
+.option-information {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin: 47px 0 20px;
+}
+
+.option-information h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #111111;
+    padding-right: 8px;
+}
+
+.option-information p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    color: #999999;
+}
+
+.information .description {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;
+}
+
+.content ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0 100px;
+    list-style-type: none;
+}
+
+.content ul li {
+    margin: 0 15px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.content ul li a {
+    text-decoration: none;
+    color: #111111;
+}
+
+.content ul li a:hover {
+    color: rgb(113, 89, 193);
+}
+
+.content li:nth-child(2) {
+    font-weight: bold !important;
+}
+
+footer {
+    height: 62px;
+    background: #EEEEEE;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+footer p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #999999;
+    text-align: center;
+}
+
+/* === Efeitos de Esconder e Aparecer === */
+
+.list-ingredients.active {
+    display: none;
+}
+
+.list-preparation.active {
+    display: none;
+}
+
+.description.active {
+    display: none;
+}
+
+#btn-ingredients, 
+#btn-preparation, 
+#btn-information {
+    cursor: pointer;
+}

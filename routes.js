@@ -1,7 +1,7 @@
 const express = require('express');
 const routes = express.Router();
 const users = require('./controllers/users');
-const recipes =  require('./controllers/admin');
+const admin =  require('./controllers/admin');
 
 routes.get("/", users.index);
 routes.get("/sobre", users.sobre);
@@ -13,7 +13,8 @@ routes.get("/admin", function(req, res) {
 
     return res.redirect("/admin/recipes");
 });
-routes.get("/admin/recipes", recipes.index);
+routes.get("/admin/recipes", admin.index);
 
+routes.get("/admin/recipes/:index", admin.show);
 
 module.exports = routes;

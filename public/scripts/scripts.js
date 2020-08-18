@@ -1,16 +1,28 @@
 const recipes = document.querySelectorAll('.recipe');
+const admin__recipe = document.querySelectorAll('#show-recipe');
 const list__ingredients = document.querySelector('.list-ingredients');
 const list__preparation = document.querySelector('.list-preparation');
 const description = document.querySelector('.description');
+
+// Admin
+
+for (let i = 0; i < admin__recipe.length; i++) {
+
+    admin__recipe[i].addEventListener('click', function () {
+
+        window.location.href = `/admin/recipes/${i + 1}`;
+    });
+}
+
+
+
+// User
 
 for (let i = 0; i < recipes.length; i++) {
 
     recipes[i].addEventListener('click', function () {
 
-        console.log(i);
-
         window.location.href = `/receitas/${i + 1}`;
-
     });
 }
 
