@@ -11,18 +11,18 @@
     <main>
         <h1>Gerenciar receitas</h1>
         
-        <div class="recipes">
+        <div class="admin-recipes">
 
             {% for recipe in recipes %}
 
-                <div class="recipe" id="">
+                <div class="admin-recipe" id="">
                     <div>
                         <img src="{{ recipe.image }}">
                     </div>
                     <div>
                         <h2>{{ recipe.title }}</h2>
                         <p>{{ recipe.author }}</p>
-                        <a href="#">Visualizar</a>
+                        <a id="show-recipe">Visualizar</a>
                     </div>
                 </div>
 
