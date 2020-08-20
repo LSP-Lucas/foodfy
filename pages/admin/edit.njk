@@ -1,0 +1,26 @@
+{% extends "./layout.njk" %}
+
+{% block head %}
+
+    <link rel="stylesheet" href="../../css/admin-styles/show.css">
+
+{% endblock head %}
+
+{% block content %}
+
+    <section class="options">
+        <div>
+            <h1>Editando receita</h1>
+            
+            {% include 'admin/fields.njk' %}
+
+        </div>
+    </section>
+
+{% endblock content %}
+
+{% block scripts %}
+
+    <script src="../../scripts/scripts.js"></script>
+
+{% endblock scripts %}

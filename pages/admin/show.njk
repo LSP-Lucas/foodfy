@@ -1,0 +1,69 @@
+{% extends "./layout.njk" %}
+
+{% block head %}
+
+    <link rel="stylesheet" href="../../css/admin-styles/show.css">
+
+{% endblock head %}
+
+{% block content %}
+
+    <section class="banner">
+        <div>
+            <h1>Receita: {{items.title}}</h1>
+            <a id="btn-edit">Editar receita</a>
+        </div>
+        <img src="{{ items.image }}" alt="{{ items.title }}"/>
+        <h2>{{ items.title }}</h2>
+        <p>{{ items.author }}</p>
+    </section>
+
+    <main>
+
+        <div class="ingredients">
+            <div class="option-ingredients">
+                <h2>Ingredientes</h2>
+            </div>
+
+            <div class="list-ingredients">
+                <ul>
+                    {% for item in items.ingredients %}
+                        <li>{{ item }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+
+        <div class="preparation">
+            <div class="option-preparation active">
+                <h2>Mode de preparo</h2>
+            </div>
+
+            <div class="list-preparation">
+                {% for item in items.preparation %}
+                    <ul>
+                        <li>{{ item }}</li>
+                    </ul>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="information">
+            <div class="option-information active">
+                <h2>Informações adicionais</h2>
+            </div>
+
+            <p class="description">{{ items.information }}</p>
+
+        </div>
+
+    </main>
+
+{% endblock content %}
+
+
+{% block scripts %}
+
+    <script src="../../scripts/scripts.js"></script>
+
+{% endblock scripts %}

@@ -1,60 +1,31 @@
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
-
-html, body {
-    height: 100%;
-}
-
-#wrapper{
-    min-height: 100%;
-    position: relative;
-}
-
-body {
-    background-color: #fff;
-}
-
-#content {
-    max-width: 940px;
-    margin: 0 auto;
-    padding-bottom: 110px;
-}
-
-header {
-    padding: 30px 0 56px;
-}
-
-header .content {
+.banner div:first-child {
     display: flex;
-    flex-direction: row;
-    margin: 0 auto;
+    justify-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
 }
 
-.content img {
-    width: 90.6px;
-    height: 26.9px;
+.banner div h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #111111;
 }
 
-.content ul {
-    display: flex;
-    flex-direction: row;
-    margin: 0 100px;
-    list-style: none;
-}
-
-.content ul a {
+.banner div a {
+    padding: 9px 20px;
+    background: #6558C3;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #FFFFFF;
+    cursor: pointer;
     text-decoration: none;
 }
 
-.content ul li {
-    margin: 0 15px;
-    font-size: 16px;
-    color: #111111;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+.banner div a:hover {
+    background: #5546c9;
 }
 
 .banner img {
@@ -63,7 +34,7 @@ header .content {
     height: 280px;
 }
 
-.banner h1 {
+.banner h2 {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     font-size: 36px;
@@ -152,6 +123,7 @@ header .content {
 
 .information {    
     width: 940px;
+    margin-bottom: 51px;
 }
 
 .option-information {
@@ -184,71 +156,5 @@ header .content {
     line-height: 28px;
 }
 
-.content ul {
-    display: flex;
-    flex-direction: row;
-    margin: 0 100px;
-    list-style-type: none;
-}
 
-.content ul li {
-    margin: 0 15px;
-    font-size: 16px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-}
 
-.content ul li a {
-    text-decoration: none;
-    color: #111111;
-}
-
-.content ul li a:hover {
-    color: rgb(113, 89, 193);
-}
-
-.content li:nth-child(2) {
-    font-weight: bold !important;
-}
-
-footer {
-    height: 62px;
-    background: #EEEEEE;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-top: 50px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
-footer p {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    color: #999999;
-    text-align: center;
-}
-
-/* === Efeitos de Esconder e Aparecer === */
-
-.list-ingredients.active {
-    display: none;
-}
-
-.list-preparation.active {
-    display: none;
-}
-
-.description.active {
-    display: none;
-}
-
-#btn-ingredients, 
-#btn-preparation, 
-#btn-information {
-    cursor: pointer;
-}

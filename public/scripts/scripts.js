@@ -1,8 +1,8 @@
 const recipes = document.querySelectorAll('.recipe');
-const admin__recipe = document.querySelectorAll('#show-recipe');
 const list__ingredients = document.querySelector('.list-ingredients');
 const list__preparation = document.querySelector('.list-preparation');
 const description = document.querySelector('.description');
+const admin__recipe = document.querySelectorAll('#show-recipe');
 
 // Admin
 
@@ -11,9 +11,17 @@ for (let i = 0; i < admin__recipe.length; i++) {
     admin__recipe[i].addEventListener('click', function () {
 
         window.location.href = `/admin/recipes/${i + 1}`;
+
     });
 }
 
+document.querySelector('#btn-edit').addEventListener("click", function() {
+
+    const url = window.location.href.split("/");
+
+    window.location.href = `/admin/recipes/${url[url.length - 1]}/edit`;
+
+});
 
 
 // User
