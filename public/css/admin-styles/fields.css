@@ -1,0 +1,60 @@
+.items {
+    margin-top: 26px;
+}
+
+.item {
+    margin-top: 30px;
+}
+
+.item:first-child {
+    margin-top: 0;
+}
+
+.item div:first-child {
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 16px;
+    color: #111111;
+}
+
+.item input {
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    width: 100%;
+    padding: 15px 0 15px 20px;
+    margin-top: 10px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    color: #111111;
+    outline: none;
+}
+
+.items button {
+    margin-top: 15px;
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 16px;
+    color: #6558C3;
+    text-align: right;
+    background-color: white;
+    outline: none;
+    cursor: pointer;
+}
+
+.item textarea {
+    margin-top: 10px;
+    padding: 18px 43px 18px 20px;
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    color: #111111;
+    line-height: 24px;
+    resize: vertical;
+    outline: none;
+}
