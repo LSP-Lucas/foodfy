@@ -1,8 +1,8 @@
-const recipes = require('../data');
+const data = require('../data.json');
 
 exports.index = function(req, res) {
 
-    return res.render("users/index", { recipes });
+    return res.render("users/index", { recipes: data.recipes });
 }
 
 exports.sobre = function(req, res) {
@@ -12,12 +12,12 @@ exports.sobre = function(req, res) {
 
 exports.receitas = function(req, res) {
 
-    return res.render("users/receitas", { recipes });
+    return res.render("users/receitas", { recipes: data.recipes });
 }
 
 exports.filter = function (req, res) {
     
-    const receipts = [...recipes];
+    const receipts = [...data.recipes];
 
     const recipeIndex = req.params.index;
 

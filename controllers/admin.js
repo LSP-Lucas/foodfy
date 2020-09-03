@@ -1,13 +1,13 @@
-const data = require('../data');
+const data = require('../data.json');
 let recipeIndex;
 
 exports.index = function(req, res) {
 
-    return res.render("admin/index", { recipes: data });
+    return res.render("admin/index", { recipes: data.recipes });
 }
 
 exports.show = function(req, res) {
-    const recipes = [...data];
+    const recipes = [...data.recipes];
 
     recipeIndex = req.params.id;
 
@@ -15,7 +15,7 @@ exports.show = function(req, res) {
 }
 
 exports.edit = function(req, res) {
-    const recipes = [...data];
+    const recipes = [...data.recipes];
     
     return res.render("admin/edit", { items: recipes[recipeIndex - 1] });
 }

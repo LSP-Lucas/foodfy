@@ -2,7 +2,7 @@
     <div class="item">
         <div>Imagem da receita</div>
         <div>
-            <input type="url" name="img_url" placeholder="http://" autocomplete="off">
+            <input type="url" name="img_url" placeholder="http://" autocomplete="off" value="{{ items.image }}">
         </div>
     </div>
 
@@ -10,7 +10,7 @@
         <div>Ingredientes</div>
         <div id="ingredients">
             <div class="ingredient">
-                <input type="text" name="ingredients[]" value="" />
+                <input type="text" name="ingredients[]" value="{{ items.ingredients }}" />
             </div>
         </div>
     </div>
@@ -32,4 +32,5 @@
             <textarea name="" id="" cols="30" rows="10"></textarea>
         </div>
     </div>
+
 </div>

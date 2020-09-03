@@ -9,19 +9,29 @@
 
 {% block content %}
 
-    <section class="options">
-        <div>
-            <h1>Editando receita</h1>
+        <section class="options">
             
-            {% include 'admin/fields.njk' %}
+            <h1>Editando receita</h1>
 
-        </div>
-    </section>
+            <button class="btn-save" type="submit" form="form-salve">Salvar receita</button>
+            
+            <button class="btn-delete" type="submit" form="form-delete">Deletar</button>
+
+            <form id="form-salve" action="" method="POST">
+                    
+                {% include 'admin/fields.njk' %}
+
+            </form>
+
+            <form id="form-delete" action="" method="POST">
+                
+            </form>
+        </section>
 
 {% endblock content %}
 
 {% block scripts %}
 
-    <script src="../../../scripts/scripts.js"></script>
+    <script src="../../../scripts/scripts-admin.js"></script>
 
 {% endblock scripts %}
