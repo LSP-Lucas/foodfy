@@ -1,0 +1,43 @@
+.options {
+    margin-bottom: 100px;
+}
+
+
+.options {
+    display: grid;
+    grid-template-columns: 2fr 139px;
+    grid-template-areas: 
+            "title salve"
+            "form form"
+        ;
+    row-gap: 10px;
+}
+
+.options h1 {
+    grid-area: title;
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 24px;
+    color: #111111;
+    justify-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+.btn-save {
+    grid-area: salve;
+    padding: 9px 20px;
+    background-color: #6558C3;
+    border-radius: 4px;
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 16px;
+    color: #FFFFFF;
+    align-self: center;
+    cursor: pointer;
+    outline: none;
+}
+
+#form-salve {
+    grid-area: form;
+}

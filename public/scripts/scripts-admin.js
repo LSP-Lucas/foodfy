@@ -1,29 +1,7 @@
 const admin_recipe = document.querySelectorAll("#show-recipe");
-const btn_edit = document.querySelector("#btn-edit");
 const add_ingredient = document.querySelector(".add-ingredient");
 const add_preparation_mode = document.querySelector(".add-preparation-mode");
 
-// Admin
-
-for (let i = 0; i < admin_recipe.length; i++) {
-
-    admin_recipe[i].addEventListener('click', function () {
-
-        window.location.href = `/admin/recipes/${i + 1}`;
-
-    });
-}
-
-if (btn_edit) {
-
-    btn_edit.addEventListener("click", function() {
-
-        const url = window.location.href.split("/");
-    
-        window.location.href = `/admin/recipes/${url[url.length - 1]}/edit`;
-    
-    });
-}
 
 if (add_ingredient){
 

@@ -10,7 +10,15 @@
         <div>Ingredientes</div>
         <div id="ingredients">
             <div class="ingredient">
-                <input type="text" name="ingredients[]" value="{{ items.ingredients }}" />
+                {% if items.ingredients != null %}
+                    {% for ingredient in items.ingredients %}
+                        <input type="text" name="ingredients[]" value="{{ ingredient }}" />
+                    {% endfor %}
+                {% endif %}
+
+                {% if items.ingredients == null %}
+                    <input type="text" name="ingredients[]" />
+                {% endif %}
             </div>
         </div>
     </div>
@@ -20,7 +28,15 @@
         <div>Modo de preparo</div>
         <div id="preparation">
             <div class="preparation-mode">
-                <input type="text" name="preparation[]" value="" />
+                {% if items.preparation != null %}
+                    {% for preparation in items.preparation %}
+                        <input type="text" name="preparation[]" value="{{ preparation }}" />
+                    {% endfor %}
+                {% endif %}
+
+                {% if items.preparation == null %}
+                    <input type="text" name="preparation[]" />
+                {% endif %}
             </div>
         </div>
     </div>
@@ -29,7 +45,7 @@
     <div class="item">
         <div>Informações adicionais</div>
         <div>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <textarea cols="30" rows="10" >{{ items.information }}</textarea>
         </div>
     </div>
 

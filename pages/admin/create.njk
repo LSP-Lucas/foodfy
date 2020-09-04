@@ -1,0 +1,35 @@
+{% extends "./layout.njk" %}
+
+{% block head %}
+
+    <link rel="stylesheet" href="../../../css/admin-styles/fields.css">
+    <link rel="stylesheet" href="../../../css/admin-styles/create.css">
+
+{% endblock head %}
+
+{% block content %}
+
+        <section class="options">
+            
+            <h1>Criando receita</h1>
+
+            <button class="btn-save" type="submit" form="form-salve">Salvar receita</button>
+            
+            <form id="form-salve" action="" method="POST">
+                    
+                {% include 'admin/fields.njk' %}
+
+            </form>
+
+            <form id="form-delete" action="" method="POST">
+                
+            </form>
+        </section>
+
+{% endblock content %}
+
+{% block scripts %}
+
+    <script src="../../../scripts/scripts-admin.js"></script>
+
+{% endblock scripts %}

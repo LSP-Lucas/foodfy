@@ -11,7 +11,7 @@
     <section class="banner">
         <div>
             <h1>Receita: {{items.title}}</h1>
-            <a id="btn-edit">Editar receita</a>
+            <a href="/admin/recipes/{{ items.id }}/edit">Editar receita</a>
         </div>
         <img src="{{ items.image }}" alt="{{ items.title }}"/>
         <h2>{{ items.title }}</h2>
