@@ -17,14 +17,16 @@
             
             <button class="btn-delete" type="submit" form="form-delete">Deletar</button>
 
-            <form id="form-salve" action="" method="POST">
+            <form id="form-salve" action="/admin/recipes?_method=PUT" method="POST">
                     
                 {% include 'admin/fields.njk' %}
 
+                <input type="hidden" name="id" value="{{ items.id }}">
+
             </form>
 
-            <form id="form-delete" action="" method="POST">
-                
+            <form id="form-delete" action="/admin/recipes?_method=DELETE" method="POST">
+                <input type="hidden" name="id" value="{{ items.id }}">
             </form>
         </section>
 
