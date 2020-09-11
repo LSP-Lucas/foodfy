@@ -7,17 +7,31 @@
     </div>
 
     <div class="item">
+        <div>Nome da receita</div>
+        <div>
+            <input type="text" name="title" value="{{ items.title }}" autocomplete="off">
+        </div>
+    </div>
+
+    <div class="item">
+        <div>Autor</div>
+        <div>
+            <input type="text" name="author" value="{{ items.author }}" autocomplete="off">
+        </div>
+    </div>
+
+    <div class="item">
         <div>Ingredientes</div>
         <div id="ingredients">
             <div class="ingredient">
                 {% if items.ingredients != null %}
                     {% for ingredient in items.ingredients %}
-                        <input type="text" name="ingredients[]" value="{{ ingredient }}" />
+                        <input type="text" name="ingredients[]" value="{{ ingredient }}" autocomplete="off"/>
                     {% endfor %}
                 {% endif %}
 
                 {% if items.ingredients == null %}
-                    <input type="text" name="ingredients[]" />
+                    <input type="text" name="ingredients[]" autocomplete="off"/>
                 {% endif %}
             </div>
         </div>
@@ -30,12 +44,12 @@
             <div class="preparation-mode">
                 {% if items.preparation != null %}
                     {% for preparation in items.preparation %}
-                        <input type="text" name="preparation[]" value="{{ preparation }}" />
+                        <input type="text" name="preparation[]" value="{{ preparation }}" autocomplete="off"/>
                     {% endfor %}
                 {% endif %}
 
                 {% if items.preparation == null %}
-                    <input type="text" name="preparation[]" />
+                    <input type="text" name="preparation[]" autocomplete="off"/>
                 {% endif %}
             </div>
         </div>

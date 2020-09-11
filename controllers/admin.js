@@ -54,8 +54,8 @@ exports.post = function(req, res) {
     data.recipes.push({
         id,
         image: img_url,
-        title: "Teste",
-        author: "O autor",
+        title,
+        author,
         ingredients,
         preparation,
         information

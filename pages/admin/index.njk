@@ -10,12 +10,14 @@
 
     <main>
         <h1>Gerenciar receitas</h1>
+
+        <a id="btn-create" href="/admin/recipes/create">Criar receita</a>
         
         <div class="admin-recipes">
 
             {% for recipe in recipes %}
 
-                <div class="admin-recipe" id="">
+                <div class="admin-recipe">
                     <div>
                         <img src="{{ recipe.image }}">
                     </div>

@@ -1,12 +1,41 @@
+main {
+    display: grid;
+    grid-template-columns: 2fr 139px;
+    grid-template-areas: 
+            "title create"
+            "recipes recipes"
+        ;
+    row-gap: 40px;
+}
+
 main h1 {
-    margin-bottom: 30px;
+    grid-area: title;
     font-family: 'Roboto';
     font-weight: bold;
     font-size: 24px;
     color: #111111;
+    justify-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+#btn-create {
+    grid-area: create;
+    padding: 9px 20px;
+    background-color: #6558C3;
+    border-radius: 4px;
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+
 }
 
 .admin-recipes {
+    grid-area: recipes;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 40px;
